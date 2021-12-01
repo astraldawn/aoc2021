@@ -46,19 +46,15 @@ int part2(vector<int> input)
 
 int main()
 {
-    int previous = 9999999;
-    int count = 0;
-    int current = 0;
+    int i;
     vector<int> input;
-    int i = 0;
     FILE *inp;
 
     // inp = fopen("test.in", "r+");
     inp = fopen("part1.in", "r+");
-    int x;
-    while (fscanf(inp, "%d\n", &x) != EOF)
+    while (fscanf(inp, "%d\n", &i) != EOF)
     {
-        input.push_back(x);
+        input.push_back(i);
     }
 
     printf("%d\n", part1(input));
