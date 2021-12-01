@@ -1,11 +1,11 @@
 #include <cstdio>
-#include <iostream>
+#include <limits>
 #include <vector>
 using namespace std;
 
 int part1(vector<int> input)
 {
-    int previous = 9999999, count = 0;
+    int previous = __INT32_MAX__, count = 0;
 
     for (int i = 0; i < input.size(); i++)
     {
@@ -21,7 +21,7 @@ int part1(vector<int> input)
 
 int part2(vector<int> input)
 {
-    int previous = 9999999, current = 0, count = 0;
+    int previous = __INT32_MAX__, current = 0, count = 0;
 
     for (int i = 0; i < input.size(); i++)
     {
